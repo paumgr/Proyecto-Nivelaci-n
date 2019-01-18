@@ -7,4 +7,25 @@ const filterFeedlabel = (data, condition) => {
       return element.feedlabel === condition
   })
   return filteredFeedlabel;
+};
+window.filterFeedlabel=filterFeedlabel;
+
+//Ordenar
+
+const steamOrder = (data , condition) => {
+  let orderData = [];
+
+  if (condition === "az") {
+    orderData = data.sort(orderByFeedlabel);
+  }
+
+  if (condition === "za") {
+    orderData = data.sort(orderByFeedlabel).reverse();
+  }
+return orderData;
 }
+
+window.steamOrder = steamOrder;
+
+
+
