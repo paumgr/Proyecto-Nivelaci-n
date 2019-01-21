@@ -16,11 +16,11 @@ const steamOrder = (data , condition) => {
   let orderData = [];
 
   if (condition === "az") {
-    orderData = data.sort(orderByFeedlabel);
+    orderData = data.sort();
   }
 
   if (condition === "za") {
-    orderData = data.sort(orderByFeedlabel).reverse();
+    orderData = data.sort().reverse();
   }
 return orderData;
 }

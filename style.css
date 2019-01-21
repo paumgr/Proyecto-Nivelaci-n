@@ -50,3 +50,8 @@
   .card .box span {
     display: inline-flex;
   }
+
+  .container {
+    width: 30%;
+    height: 30%;
+  }

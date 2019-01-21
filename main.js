@@ -1,10 +1,12 @@
 
 
 
-const data = (window.STEAM.appnews.newsitems);
+let data = (window.STEAM.appnews.newsitems);
 const containerRoot = document.getElementById("root");
 const selectFeedlabel = document.getElementById("feedlabel-select");
 const orderData = document.getElementById("orderdata")
+
+
 //const data = (STEAM.appnews.newsistem)
 
 //Mostrando la Data
@@ -26,6 +28,25 @@ const showData = (data) => {
     })
 
     //Ordenando
+    
+    /*document.getElementById('az').addEventListener('click', (evento) => {
+      evento.preventDefault();
+      data = window.orderData(data, 'az');
+      cardSteam(orderData);
+    });
+    document.getElementById('za').addEventListener('click', (evento) => {
+      evento.preventDefault();
+      data = window.orderData(data, 'za');
+      cardSteam(orderData);
+    });*/
+
+    /*const orderCards = document.getElementById("steamOrder");
+    //const orderCards = document.getElementById('steamOrder');
+    orderCards.addEventListener('change', () => {
+        let condition =  orderCards.options[orderCards.selectedIndex].value;
+        steamOrder(data,condition);
+        cardSteam(data);
+    });*/
 
 
   //Función para todas las tarjetas
@@ -66,23 +87,4 @@ const showData = (data) => {
   window.onload = showData(data);
  
 
-  //Ordenar
-
-  
-
-  
-
-  
-
-  /* result = containerRoot.innerHTML += `
-            <div class="card">
-              <div class="box">
-                <div class="img">
-                    <img src="${element.url}">
-                </div>
-                <h2>${element.title}<br><span>${element.author}</span></h2>
-                <p>${element.feedlabel}</p>
-              </div>
-            </div>`
-        
-    });*/
+ 
